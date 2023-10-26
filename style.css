@@ -1,0 +1,79 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  background-color: #f0f5f7;
+  color: #143548;
+  font-family: 'Castoro Titling';
+}
+
+
+
+#wordle-title {
+  text-align: center;
+}
+
+/*
+* GRID
+*/
+#tileboard {
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  background-color: #143548;
+  color: #f0f5f7;
+}
+
+#tileboard .row {
+  border-bottom: 1px dashed #c92830;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+#tileboard .tile {
+  flex-grow: 1;
+  text-align: center;
+  cursor: text;
+  align-self: center;
+}
+
+/*
+* KEYBOARD
+*/
+#keyboard {
+
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#keyboard .keyboardRow {
+  display: flex;
+  flex-direction: row;
+  align-content: justify-center;
+  justify-content: center;
+}
+
+#keyboard .key {
+  border: 1.5px solid grey;
+  border-radius: 5px;
+  flex-grow: 1;
+  text-align: center;
+  padding: .5rem;
+  cursor: pointer;
+  margin: .15rem;
+}
+
+.key:hover {
+  background-color: grey;
+  color: white;
+}
